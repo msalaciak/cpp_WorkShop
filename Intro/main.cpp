@@ -5,6 +5,26 @@
 #include <vector>
 using namespace std;
 
+
+void passByValue(int value){
+    cout<<"pass by value"<<endl;
+    cout<<"memory address: "<< &value<<endl;
+     cout<<"value: "<< value<<endl;
+    
+}
+
+void passByReference(int &value){
+    cout<<"pass by reference"<<endl;
+    cout<<"memory address: "<< &value<<endl;
+     cout<<"value: "<< value<<endl;
+}
+
+void passByPointer(int *value){
+    cout<<"pass by pointer"<<endl;
+    cout<<"memory address: "<< value<<endl;
+   cout<<"value: "<< *value<<endl;
+    
+}
 int main(int argc, const char * argv[]) {
    
     //pointer examples
@@ -44,6 +64,19 @@ int main(int argc, const char * argv[]) {
     
     cout<<"testPointer1 value printed "<<endl;
     cout<<*testPointer1<<"\n"<<endl;
+    
+    cout<<"------------------"<<endl;
+    int value = 234;
+    cout<<"parameter passing by value, reference and pointer"<<endl;
+    cout<<"value is set to 234"<<endl;
+    cout<<"value location in main memory: " << &value <<endl;
+    
+    
+    
+    passByValue(value);
+    passByReference(value);
+    passByPointer(&value);
+    
     
     
     
