@@ -10,6 +10,7 @@ void passByValue(int value){
     cout<<"pass by value"<<endl;
     cout<<"memory address: "<< &value<<endl;
      cout<<"value: "<< value<<endl;
+     cout<<"\n"<<endl;
     
 }
 
@@ -17,12 +18,14 @@ void passByReference(int &value){
     cout<<"pass by reference"<<endl;
     cout<<"memory address: "<< &value<<endl;
      cout<<"value: "<< value<<endl;
+     cout<<"\n"<<endl;
 }
 
 void passByPointer(int *value){
     cout<<"pass by pointer"<<endl;
     cout<<"memory address: "<< value<<endl;
    cout<<"value: "<< *value<<endl;
+    cout<<"\n"<<endl;
     
 }
 int main(int argc, const char * argv[]) {
@@ -69,7 +72,7 @@ int main(int argc, const char * argv[]) {
     int value = 234;
     cout<<"parameter passing by value, reference and pointer"<<endl;
     cout<<"value is set to 234"<<endl;
-    cout<<"value location in main memory: " << &value <<endl;
+    cout<<"value location in main memory: " << &value <<"\n"<<endl;
     
     
     
